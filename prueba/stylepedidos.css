@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+}
+
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.header{
+    background-color: #fafafa;
+    padding: 150px 0 100px 0;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.menu{
+   
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu .navbar ul li{
+    position: relative;
+    float: left;
+
+}
+
+.menu .navbar ul li a{
+    font-size: 18px;
+    padding: 20px;
+    color: #323232;
+    display: block;
+}
+
+.menu .navbar ul li a:hover{
+    color: #ee46d2;
+}
+
+.logo{
+    font-size: 25px;
+    font-weight: 800;
+    color: #ee46d2;
+    text-transform: uppercase;
+}
+
+
+#menu{
+    display: none;
+}
+
+.menu-icono{
+    width: 25px;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+
+.pago{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   margin-top: 0%;
+   height: 650px;
+}
+
+.pago img{
+    width: 500px;
+    height: 500px;
+}
+
+
+
+.footer{
+    padding: 50px;
+    background-color: #fafafafa;
+ }
+
+ .footer-content{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .link ul{
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+ }
+
+ .link ul li{
+    margin-right: 50px;
+ }
+
+ .link ul li a{
+    color: #323232;
+    font-size: 17px;
+ }
+
+ .link ul li a:hover{
+    color: #ee46d2;
+ }
+
+
+@media (max-width: 991px){
+    .menu{
+        padding: 20px;
+    }
+
+    .menu label{
+        display: initial;
+    }
+
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #FFFFFF;
+        display: none;
+    }
+
+    .menu .navbar ul li{
+        width: 100%;
+    }
+     
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+
+    
+    .footer{
+        padding: 30px;
+    }
+
+    .footer-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .link ul{
+        flex-direction: column;
+    }
+
+    .link ul li{
+        margin: 0 0 15px 0;
+    }
+
+    
+}
